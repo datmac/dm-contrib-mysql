@@ -1,0 +1,37 @@
+{
+  "name": "dm-contrib-mysql",
+  "version": "0.0.0",
+  "description": "DM's plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/datmac/dm-contrib-mysql.git"
+  },
+  "keywords": [
+    "datmac",
+    "millplugin"
+  ],
+  "author": "Luke Madel",
+  "dependencies": {
+    "dm-core": "latest",
+    "segmenter": "latest"
+  },
+  "devDependencies": {
+    "mocha": ">=1.8.1",
+    "should": ">=1.2.1"
+  },
+  "peerDependencies": {
+    "dm-server": "latest"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/datmac/dm-contrib-mysql/issues"
+  },
+  "bin": {
+    "dm-contrib-mysql": "./cli.js"
+  }
+
+}

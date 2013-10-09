@@ -1,0 +1,48 @@
+{
+  "id": "mysql",
+  "output": "application/json",
+  "title": {
+    "fr": "Exécute des requêtes SQL sur un serveur MySQL",
+    "en": "Exec SQL queries on a MySQL server"
+  },
+  "description": {
+    "fr" : "",
+    "en" : ""
+  },
+  "parameters" : {
+    "url" : {
+      "alias": "u",
+      "type": "text",
+      "required": false,
+      "default": "mysql://root:@localhost/test",
+      "size": "long",
+      "pattern": "mysql://.+",
+      "maxlength": "",
+      "label": {
+        "fr": "URL",
+        "en": "URL"
+      },
+      "help": {
+        "fr": "URL de connection au server Mysql.",
+        "en": "URL to connect to the Mysql server."
+      }
+    },
+    "delimiter": {
+      "alias": "d",
+      "type": "text",
+      "required": false,
+      "default": ";\n",
+      "size": "small",
+      "pattern": "",
+      "maxlength": "",
+      "label": {
+        "fr": "Delimiteur",
+        "en": "Delimiter"
+      },
+      "help": {
+        "fr": "Un ou plusieurs caractères séparant des portions de texte, typiquement une ligne de texte se finissant par [un caractère de fin de ligne](https://fr.wikipedia.org/wiki/Fin_de_ligne).",
+        "en": "A special character or sequence of characters signifying the end of a of text segment. For example [newline](https://en.wikipedia.org/wiki/Newline)"
+      }
+    }
+  }
+}

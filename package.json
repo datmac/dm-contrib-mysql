@@ -17,7 +17,9 @@
   "author": "Luke Madel",
   "dependencies": {
     "dm-core": "latest",
-    "segmenter": "latest"
+    "mysql": "~mysql@2.0.0",
+    "segmenter": "latest",
+    "async": "~0.2.9"
   },
   "devDependencies": {
     "mocha": ">=1.8.1",
@@ -33,5 +35,4 @@
   "bin": {
     "dm-contrib-mysql": "./cli.js"
   }
-
 }
